@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 
 public class Temporizador {
        
-    static Monstruo m;
+
     
     public void iniciarTemporizador(int tiempoInicial, int tiempoTemp) {
         ScheduledExecutorService scheduler = Executors.newScheduledThreadPool(1);

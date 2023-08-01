@@ -1,18 +1,23 @@
 package drawmon;
 
+import java.awt.Graphics;
+import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
+import javax.swing.ImageIcon;
 
 public class Monstruo {
 
     private String nombre;
-    protected int salud = 100;
-    protected int energia = 100;
-    protected int humor = 100;
-    protected int sabiduria = 0;
-    protected int atletismo = 0;
-    protected int hambre = 100;
-    protected int peso = 10;
+    protected int salud;
+    protected int energia;
+    protected int humor;
+    protected int sabiduria;
+    protected int atletismo;
+    protected int hambre;
+    protected int peso;
+    protected int sucio;
+    protected int dinero;
     protected boolean enfermo = false;
     protected boolean aburrido = false;
     protected boolean muerto = false;
@@ -20,21 +25,35 @@ public class Monstruo {
     protected boolean cansado = false;
     protected boolean dormido = false;
 
+    public static int x=10, y=10;
+    
+       private final ArrayList<Item> items;
+    
     Timer restaSalud;
     Timer restaHambre;
     
+    public void paint(Graphics g){
+        ImageIcon mon = new ImageIcon(getClass().getResource("../images/mascota.png"));
+        g.drawImage(mon.getImage(),x,y,100,100,null);
+    }
+    
     public Monstruo() {
         resta10HambreXHora();
+        this.items = null;
     }
 
     public Monstruo(String nombre) {
         this.nombre = nombre;
-        this.salud = salud;
-        this.energia = energia;
-        this.humor = humor;
-        this.sabiduria = sabiduria;
-        this.atletismo = atletismo;
-        this.hambre = hambre;
+        this.salud = 100;
+        this.energia = 100;
+        this.humor  = 100;
+        this.sabiduria = 0;
+        this.atletismo  = 0;
+        this.hambre = 100;
+        this.peso = 10;
+        this.sucio = 100;
+        
+        items = new ArrayList<>();
         
         resta10HambreXHora();
     }
@@ -138,6 +157,22 @@ public class Monstruo {
 
     public void setPeso(int peso) {
         this.peso = peso;
+    }
+
+    public int getSucio() {
+        return sucio;
+    }
+
+    public void setSucio(int sucio) {
+        this.sucio = sucio;
+    }
+
+    public int getDinero() {
+        return dinero;
+    }
+
+    public void setDinero(int dinero) {
+        this.dinero = dinero;
     }
 
     // ENFERMO ----------------------------------------------------------------------------------------------------------
@@ -352,10 +387,17 @@ public class Monstruo {
     
     // HIGIENIZAR -------------------------------------------------------------------------------------------------------- SIN TERMINAR
     
-    public void higienizar(){
-        
+    public void lavar(){
+        sucio = 100;
+        humor+=15;
+        energia+=15;
     }
     
+    // COMPRAR ----------------------------------------------------------------------------------------------------------------------
+    
+    public void comprar(Item item){
+        
+    }
     
     @Override
     public String toString() {
