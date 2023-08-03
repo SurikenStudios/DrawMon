@@ -1,0 +1,25 @@
+#negroButton {
+    -fx-background-color: black;
+    -fx-border-color: grey;
+    -fx-border-width: 2px;
+}
+
+#negroButton:selected {
+      -fx-border-color: yellow;
+}
+
+
+#blancoButton {
+    -fx-background-color: white;
+    -fx-border-color: grey;
+    -fx-border-width: 2px;
+}
+
+
+#blancoButton:selected {
+      -fx-border-color: yellow;
+}
+
+#cuad {
+    -fx-background-color: transparent;
+}

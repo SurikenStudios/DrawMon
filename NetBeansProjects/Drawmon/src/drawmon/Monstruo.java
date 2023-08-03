@@ -367,7 +367,7 @@ public class Monstruo {
          
         } else if (hambriento = true) {
            
-        } else 
+        }
             
     }
     
@@ -376,7 +376,7 @@ public class Monstruo {
     public void dormir (){
             if (enfermo = true) {
             
-        }  else 
+        } 
     }
     
     // ALIMENTAR -------------------------------------------------------------------------------------------------------- SIN TERMINAR

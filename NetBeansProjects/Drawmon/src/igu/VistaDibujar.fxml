@@ -13,9 +13,9 @@
           <Canvas fx:id="canvas" height="400" width="400" />
          <Pane layoutY="400.0" prefHeight="80.0" prefWidth="400.0">
             <children>
-                <ToggleButton fx:id="negroButton" prefHeight="40.0" prefWidth="40.0"/>
-                <ToggleButton fx:id="blancoButton" layoutX="40.0" prefHeight="40.0" prefWidth="40.0"/>
-                <ToggleButton fx:id="borrarButton" layoutY="40.0" prefHeight="40.0" prefWidth="40.0"/>
+                <ToggleButton fx:id="negroButton" prefHeight="40.0" prefWidth="40.0" />
+                <ToggleButton fx:id="blancoButton" layoutX="40.0" prefHeight="40.0" prefWidth="40.0" />
+                <ToggleButton fx:id="borrarButton" layoutY="40.0" prefHeight="40.0" prefWidth="40.0" />
                 <Button fx:id="terminarButton" layoutX="300.0" layoutY="40.0" prefHeight="40.0" prefWidth="100.0" text="Terminar" />
             </children>
          </Pane>

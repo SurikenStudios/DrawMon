@@ -9,9 +9,11 @@ import javafx.stage.Stage;
 public class DrawmonGame extends Application {
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("../igu/VistaDibujar.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../igu/VistaInicio.fxml"));
         Scene scene = new Scene(root);
+        
         stage.setScene(scene);
+        
         stage.show();
     }
 
