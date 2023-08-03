@@ -1,25 +1,51 @@
 #negroButton {
     -fx-background-color: black;
     -fx-border-color: grey;
-    -fx-border-width: 2px;
+    -fx-border-width: 1px;
 }
 
 #negroButton:selected {
-      -fx-border-color: yellow;
+    -fx-border-color: yellow;
 }
 
 
 #blancoButton {
     -fx-background-color: white;
     -fx-border-color: grey;
-    -fx-border-width: 2px;
+    -fx-border-width: 1px;
 }
 
 
 #blancoButton:selected {
-      -fx-border-color: yellow;
+    -fx-border-color: yellow;
 }
 
-#cuad {
-    -fx-background-color: transparent;
+#paneLienzo {
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+#paneButton {
+
+    -fx-border-color: black;
+    -fx-border-width: 1px;
+}
+
+#terminarButton {
+
+    -fx-opacity: 0.8;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-background-radius: 15;
+    -fx-border-radius: 15;
+
+}
+
+#paneLienzo {
+    -fx-background-color: lightgrey;
+}
+
+#paneButton {
+    
+      -fx-background-color: lightgrey;
 }
