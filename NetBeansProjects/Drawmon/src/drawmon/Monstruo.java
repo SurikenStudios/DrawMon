@@ -1,10 +1,9 @@
 package drawmon;
 
-import java.awt.Graphics;
+
 import java.util.ArrayList;
 import java.util.Timer;
 import java.util.TimerTask;
-import javax.swing.ImageIcon;
 
 public class Monstruo {
 
@@ -25,17 +24,11 @@ public class Monstruo {
     protected boolean cansado = false;
     protected boolean dormido = false;
 
-    public static int x=10, y=10;
-    
        private final ArrayList<Item> items;
     
     Timer restaSalud;
     Timer restaHambre;
     
-    public void paint(Graphics g){
-        ImageIcon mon = new ImageIcon(getClass().getResource("../images/mascota.png"));
-        g.drawImage(mon.getImage(),x,y,100,100,null);
-    }
     
     public Monstruo() {
         resta10HambreXHora();
@@ -385,7 +378,7 @@ public class Monstruo {
           
     }
     
-    // HIGIENIZAR -------------------------------------------------------------------------------------------------------- SIN TERMINAR
+    // LAVAR -------------------------------------------------------------------------------------------------------- SIN TERMINAR
     
     public void lavar(){
         sucio = 100;
